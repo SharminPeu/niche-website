@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
 // import Rating from "react-rating";
-import Rating from "@mui/material/Rating";
+// import Rating from "@mui/material/Rating";
 
 import { useHistory } from "react-router-dom";
 import "./Product.css";
@@ -27,7 +27,7 @@ const Product = ({ product }) => {
           <Card.Text className="text-start">
             {description.slice(0, 80)}.....
           </Card.Text>
-          <div className="d-flex justify-content-between  align-items-center">
+          {/* <div className="d-flex justify-content-between  align-items-center">
             <p className="text-start">
               <Rating
                 name="read-only"
@@ -37,7 +37,7 @@ const Product = ({ product }) => {
               />
             </p>
             <p className="text-start">({rating} out of 5)</p>
-          </div>
+          </div> */}
           <button
             onClick={() => handleBooking(_id)}
             className="btn btn-success"

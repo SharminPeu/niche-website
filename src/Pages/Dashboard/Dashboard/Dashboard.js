@@ -57,11 +57,11 @@ function Dashboard(props) {
             </Button>
           </NavLink>
           <br />
-          {/* <NavLink style={{ textDecoration: "none" }} to={`${url}/makeAdmin`}>
+          <NavLink style={{ textDecoration: "none" }} to={`${url}/makeAdmin`}>
             <Button sx={{ mt: 2 }} color="inherit">
               Make Admin
             </Button>
-          </NavLink> */}
+          </NavLink>
           <NavLink style={{ textDecoration: "none" }} to={`${url}/addProduct`}>
             <Button sx={{ mt: 2 }} color="inherit">
               Add Product
@@ -90,19 +90,14 @@ function Dashboard(props) {
             </Button>
           </NavLink>
           <br />
-          <NavLink style={{ textDecoration: "none" }} to={`${url}/makeAdmin`}>
-            <Button sx={{ mt: 2 }} color="inherit">
-              Make Admin
-            </Button>
-          </NavLink>
-          <br/>
           <NavLink style={{ textDecoration: "none" }} to={`${url}/review`}>
             <Button sx={{ mt: 2 }} color="inherit">
               Review
             </Button>
           </NavLink>
         </Box>
-      )}
+      )
+      }
       <Divider sx={{ mt: 5 }} />
       <br />
       <button onClick={logOut} className="btn btn-success text-white py-1">

@@ -20,15 +20,14 @@ const AddProduct = () => {
   return (
     <div className="container">
       <h5 className="mb-3 text-color">Admin Panel</h5>
-      <h2 className="mb-5">Add A New Scooty</h2>
+      <h2 className="mb-5">Add A New Product</h2>
       <Row className="justify-content-center">
         <Col lg={8}>
           <form className="book-form" onSubmit={handleSubmit(onSubmit)}>
-            <input {...register("name")} placeholder="Scooty Name" required />
+            <input {...register("name")} placeholder="Watch Name" required />
             <input
-              type="number"
-              {...register("model")}
-              placeholder="Model"
+              {...register("brand")}
+              placeholder="Brand"
               required
             />
             <textarea
@@ -37,11 +36,7 @@ const AddProduct = () => {
               required
             />
             <input {...register("price")} placeholder="price" required />
-            <input
-              {...register("rating", { min: 0, max: 5 })}
-              placeholder="Rating (Out of 5)"
-              required
-            />
+          
             <input {...register("img")} placeholder="Img Url" required />
             <input
               className="btn-success border-0 text-white py-2 rounded-pill"
