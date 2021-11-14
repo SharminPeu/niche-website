@@ -1,9 +1,7 @@
 import { Link, useHistory } from "react-router-dom";
 import useAuth from "../../Firebase/hooks/UseAuth";
-
 import Footers from "../Shared/Footers/Footers";
 import MenuBar from "../Shared/MenuBar/MenuBar";
-
 const Register = () => {
   const {
     errorRegister,
@@ -22,7 +20,7 @@ const Register = () => {
 
   return (
     <div className="container">
-      <MenuBar></MenuBar>
+     <MenuBar></MenuBar>
       <div className="col-12 col-md-12">
         <div className="d-flex justify-content-center my-5">
           <div className="shadow p-5 mb-5 bg-body rounded">
