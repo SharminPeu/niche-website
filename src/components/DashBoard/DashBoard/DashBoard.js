@@ -11,17 +11,26 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import { NavLink, Route, Switch, useRouteMatch } from "react-router-dom";
-import useAuth from "../../../hooks/useAuth";
-import DashboardHome from "../DashboardHome/DashboardHome";
-import Pay from "./Pay/Pay";
-import MakeAdmin from "../MakeAdmin/MakeAdmin";
-import MyOrders from "../MyOrders/MyOrders";
-import Review from "../Review/Review";
-import ManageOrders from "../ManageOrders/ManageOrders";
-import AddProduct from "../AddProduct/AddProduct";
-import AdminRoute from "../../Login/AdminRoute/AdminRoute";
-import ManageProduct from "../ManageProduct/ManageProduct";
+import useAuth from "../../../Firebase/hooks/UseAuth";
+// import DashboardHome from "../DashboardHome/DashboardHome";
+// import Pay from "./Pay/Pay";
+// import MakeAdmin from "../MakeAdmin/MakeAdmin";
+// import MyOrders from "../MyOrders/MyOrders";
+// import Review from "../Review/Review";
+// import ManageOrders from "../ManageOrders/ManageOrders";
+// import AddProduct from "../AddProduct/AddProduct";
+// import AdminRoute from "../../Login/AdminRoute/AdminRoute";
+// import ManageProduct from "../ManageProduct/ManageProduct";
 import { Spinner } from "react-bootstrap";
+import DashBoardHome from "../DashboardHome/DashboardHome";
+import Pay from "../Pay/Pay";
+import MyOrders from "../MyOrders/MyOrders";
+import Review from "../../Review/Review";
+import AdminRoute from "../../AdminRoute/AdminRoute";
+import ManageOrders from "../ManageOrders/ManageOrders";
+import MakeAdmin from "../MakeAdmin/MakeAdmin";
+import AddProduct from "../AddProduct/AddProduct";
+import ManageProduct from "../ManageProduct/ManageProduct";
 
 const drawerWidth = 180;
 
@@ -190,7 +199,7 @@ function Dashboard(props) {
         <Toolbar />
         <Switch>
           <Route exact path={path}>
-            <DashboardHome></DashboardHome>
+            <DashBoardHome></DashBoardHome>
           </Route>
           <Route exact path={`${path}/pay`}>
             <Pay></Pay>

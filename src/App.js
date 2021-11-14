@@ -9,6 +9,7 @@ import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Register from "./components/Register/Register";
 import NotFounds from "./components/NotFounds/NotFounds";
+import DashBoard from "./components/DashBoard/DashBoard/DashBoard"
 // import Home from "./Pages/Home/Home/Home";
 // import Contact from "./Pages/Contact/Contact";
 // import Login from "./Pages/Login/Login/Login";
@@ -38,7 +39,7 @@ function App() {
               <ProductBook></ProductBook>
             </PrivateRoute>
             <PrivateRoute path="/dashboard">
-              <Dashboard></Dashboard>
+              <DashBoard></DashBoard>
             </PrivateRoute>
             <Route path="/contact">
              <ContactUs></ContactUs>
