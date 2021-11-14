@@ -1,9 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import img1 from "../../../images/attractive/worldwide.png";
-import img2 from "../../../images/attractive/original.png";
-import img3 from "../../../images/attractive/offer.png";
-import img4 from "../../../images/attractive/cleanup.png";
+import img1 from "../../../images/attractive/original.png";
+import img2 from "../../../images/attractive/offer.png";
+import img3 from "../../../images/attractive/cleanup.png";
 
 const Attractive = () => {
   return (
@@ -18,7 +17,7 @@ const Attractive = () => {
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
-                  src={img2}
+                  src={img1}
                   alt=""
                 />
                 <div>
@@ -31,7 +30,7 @@ const Attractive = () => {
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
-                  src={img3}
+                  src={img2}
                   alt=""
                 />
                 <div>
@@ -44,7 +43,7 @@ const Attractive = () => {
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
-                  src={img4}
+                  src={img3}
                   alt=""
                 />
                 <div>
