@@ -13,7 +13,7 @@ import { Button } from "@mui/material";
 import { NavLink, Route, Switch, useRouteMatch } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import DashboardHome from "../DashboardHome/DashboardHome";
-import Pay from "../Pay/Pay";
+import Pay from "./Pay/Pay";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import MyOrders from "../MyOrders/MyOrders";
 import Review from "../Review/Review";
