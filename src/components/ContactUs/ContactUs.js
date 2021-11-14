@@ -1,12 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Footer from "../Shared/Footer/Footer";
-import Navigation from "../Shared/Navigation/Navigation";
+import Footers from "../Shared/Footers/Footers";
+import MenuBar from "../Shared/MenuBar/MenuBar";
 
-const Contact = () => {
+
+const ContactUs = () => {
   return (
     <div className="containeer">
-      <Navigation></Navigation>
+      <MenuBar></MenuBar>
       <Container>
         <div className="row g-2 my-5 text-start">
           <div className="col-md-4 col-12">
@@ -45,9 +46,9 @@ const Contact = () => {
           </div>
         </div>
       </Container>
-      <Footer></Footer>
+      <Footers></Footers>
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;

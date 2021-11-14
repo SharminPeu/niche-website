@@ -9,7 +9,8 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import initializeFirebase from "../Pages/Login/Firebase/firebase.init";
+import initializeFirebase from "../Firebase/firebase.init";
+// import initializeFirebase from "../Pages/Login/Firebase/firebase.init";
 
 initializeFirebase();
 
