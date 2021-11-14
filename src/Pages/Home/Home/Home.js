@@ -1,4 +1,5 @@
 import React from "react";
+import AboutUs from "../../AboutUs/AboutUs";
 import Footer from "../../Shared/Footer/Footer";
 import Navigation from "../../Shared/Navigation/Navigation";
 import Attractive from "../Attractive/Attractive";
@@ -10,6 +11,7 @@ const Home = () => {
   return (
     <div>
       <Navigation></Navigation>
+      <AboutUs></AboutUs>
       <Banner></Banner>
       <Products></Products>
       <Reviews></Reviews>
