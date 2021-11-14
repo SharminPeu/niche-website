@@ -1,11 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import img1 from "../../../images/attractive/original.png";
-import img2 from "../../../images/attractive/offer.png";
-import img3 from "../../../images/attractive/cleanup.png";
-import './Attractive.css'
+import img1 from "../image/Extra/original.png";
+import img2 from "../image/Extra/offer.png";
+import img3 from "../image/Extra/cleanup.png";
+import './ExtraPart.css'
 
-const Attractive = () => {
+const ExtraPart = () => {
   return (
     <div className="container">
       <h2 className="text-warning text-center">You Will Get Here</h2>
@@ -59,4 +59,4 @@ const Attractive = () => {
   );
 };
 
-export default Attractive;
+export default ExtraPart;

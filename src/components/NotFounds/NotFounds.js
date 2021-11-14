@@ -1,7 +1,7 @@
 import React from "react";
-import './NotFound.css'
+import './NotFounds.css'
 
-const NotFound = () => {
+const NotFounds = () => {
   return (
 
     <div className="error container">
@@ -16,4 +16,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFounds;
