@@ -7,7 +7,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
-    <>
+    <div className="container">
       <div className="bg-secondary p-3 text-white">
         <div className="py-5 d-lg-flex justify-content-around">
         <div>
@@ -60,7 +60,7 @@ const Footer = () => {
         Copyright<i className="far fa-copyright"></i> 2022 Watch Zone All right
         reserved.
       </p>
-    </>
+    </div>
   );
 };
 

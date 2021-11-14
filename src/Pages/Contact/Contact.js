@@ -5,12 +5,12 @@ import Navigation from "../Shared/Navigation/Navigation";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="containeer">
       <Navigation></Navigation>
       <Container>
         <div className="row g-2 my-5 text-start">
-          <div className="col-md-4">
-            <p className="text-color fw-bold">Information</p>
+          <div className="col-md-4 col-12">
+            <h5 className="text-primary fw-bold">Information</h5>
             <p className=" mb-0">Contact Info.</p>
             <h3>Connect With Us</h3>
            
@@ -26,8 +26,21 @@ const Contact = () => {
               <a href="hasibulhasan294@gmail.com">watch_zone@gmail.com</a>
             </p>
           </div>
-          <div className="col-md-8">
-            <p className="text-color mb-0">Drop Us Some info</p>
+          <div className="col-md-8 col-12">
+
+          <div className="row">  
+<h5 className="text-primary fw-bold">About Us</h5>
+<div className="col-md-4 col-12">   
+ <img className="img-fluid mt-5" src="https://downloadwap.com/thumbs2/wallpapers/p2ls/2019/technology/43/e9cfc1f013578804.jpg" alt="" /></div>
+
+
+<div className="col-md-8 col-12 text-start">
+    <p className="mt-4 fs-4 fw-bold text-center">From 2011 We started our journey</p>
+    <small className="mt-3 ">
+    Watch Zone started their journey almost 10years ago.Their product collection  are extremely popular across the market and have earned a multitude of  awards throughout the past decade. Classic Journeys caters not only to high-end clients  but also to young adults too.They provide best collection and offer huge sale in different time,You will get Different Brand In One House.User Frienly environment here.. 
+
+</small>
+            {/* <p className="text-color mb-0">Drop Us Some info</p>
             <h3>We'll be glad ...</h3>
             <hr className="border-bottom border-4 border-primary w-50 mb-4" />
             <form className="row g-3 bg-secondary bg-opacity-50 rounded pb-3">
@@ -80,8 +93,10 @@ const Contact = () => {
                   Send Us
                 </button>
               </div>
-            </form>
-          </div>
+            </form> */}
+        </div>
+        </div>
+        </div>
         </div>
       </Container>
       <Footer></Footer>

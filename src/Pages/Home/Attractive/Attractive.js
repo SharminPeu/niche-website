@@ -3,17 +3,18 @@ import { Col, Container, Row } from "react-bootstrap";
 import img1 from "../../../images/attractive/original.png";
 import img2 from "../../../images/attractive/offer.png";
 import img3 from "../../../images/attractive/cleanup.png";
+import './Attractive.css'
 
 const Attractive = () => {
   return (
-    <>
-      <h2 className="text-primary text-center">You Will Get Here</h2>
-      <div className="bg-success p-5">
+    <div className="container">
+      <h2 className="text-warning text-center">You Will Get Here</h2>
+      <div className=" p-5">
         <Container>
-          <Row className="g-4 py-3 text-white">
+          <Row className="g-4 py-3  text-primary">
         
             <Col md={4}>
-              <div className="d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-center align-items-center border_card">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
                   src={img1}
@@ -26,7 +27,7 @@ const Attractive = () => {
               </div>
             </Col>
             <Col md={4}>
-              <div className="d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-center align-items-center border_card ">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
                   src={img2}
@@ -39,7 +40,7 @@ const Attractive = () => {
               </div>
             </Col>
             <Col md={4}>
-              <div className="d-flex justify-content-center align-items-center">
+              <div className="d-flex justify-content-center align-items-center border_card">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
                   src={img3}
@@ -54,7 +55,7 @@ const Attractive = () => {
           </Row>
         </Container>
       </div>
-    </>
+    </div>
   );
 };
 

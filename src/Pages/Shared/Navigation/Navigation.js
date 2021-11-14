@@ -7,7 +7,7 @@ import bg from "../../../images/watch.jpg";
 const Navigation = () => {
   const { user, logOut } = useAuth();
   return (
-    <>
+    <div className="container">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -73,7 +73,7 @@ const Navigation = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+    </div>
   );
 };
 

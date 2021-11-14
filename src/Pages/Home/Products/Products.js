@@ -22,7 +22,7 @@ const Products = () => {
     );
   }
   return (
-    <div className="my-5 p-4">
+    <div  className=" containeer my-5 p-4">
       <h2 className="mb-0 text-primary">Our Watch Collections</h2>
       <Container>
         <Row className="g-4 my-3">

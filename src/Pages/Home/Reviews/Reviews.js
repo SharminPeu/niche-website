@@ -17,7 +17,7 @@ const Reviews = () => {
   }, [isLoading]);
 
   return (
-    <div className="my-5 py-5 bg-light">
+    <div className="container my-5 py-5 bg-light">
       <h5 className="text-dark fw-light">Don’t Hear From Us Only</h5>
       <h2 className="text-primary">Customers Reviews About Us</h2>
       

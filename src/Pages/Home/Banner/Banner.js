@@ -8,8 +8,8 @@ import "./Banner.css";
 
 const Banner = () => {
   return (
-    <>
-      <Carousel className="container" interval={2000}>
+    <div className="container">
+      <Carousel  interval={2000}>
         <Carousel.Item className=" item-1">
           <img className="imagee img-fluid d-block w-100" src={banner1} alt="First slide" />
         </Carousel.Item>
@@ -24,7 +24,7 @@ const Banner = () => {
 
         </Carousel.Item>
       </Carousel>
-    </>
+    </div>
   );
 };
 

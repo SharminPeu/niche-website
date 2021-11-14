@@ -20,11 +20,11 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <Navigation></Navigation>
-      
+      <div className="col-12 col-md-12">
       <div className="d-flex justify-content-center my-5">
-        <div class="shadow p-5 mb-5 bg-body rounded">
+        <div className="shadow p-5 mb-5 bg-body rounded">
           <h2 className="text-center mb-5">Please Register</h2>
           <form onSubmit={register}>
             <div className="mb-3 text-start">
@@ -91,6 +91,7 @@ const Register = () => {
           Already Have an Account?<Link to="/login">Login Here</Link>
         </p>
       
+        </div>
         </div>
       </div>
       {/* <div className="w-75 mx-auto my-4 text-start">

@@ -36,7 +36,7 @@ const BookProduct = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="container">
       <Navigation></Navigation>
       <div className="my-5">
         <h2 className="mb-3 text-color">Book Your Order</h2>

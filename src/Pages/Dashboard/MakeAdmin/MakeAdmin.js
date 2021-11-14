@@ -29,7 +29,7 @@ const MakeAdmin = () => {
     <div>
       <h2>Make this user Admin</h2>
       <div className="d-flex justify-content-center my-3">
-        <div class="w-75 shadow p-5 mb-5 bg-body rounded">
+        <div className="w-75 shadow p-5 mb-5 bg-body rounded">
           <form onSubmit={handleAdminSubmit}>
             <div className="mb-3 text-start">
               <label htmlFor="exampleInputEmail1" className="form-label">
