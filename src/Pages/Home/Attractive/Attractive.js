@@ -8,25 +8,13 @@ import img4 from "../../../images/attractive/cleanup.png";
 const Attractive = () => {
   return (
     <>
-      <h2 className="text-primary text-center">WHY YOU CHOOSE US</h2>
+      <h2 className="text-primary text-center">You Will Get Here</h2>
       <hr className="border-bottom border-4 border-primary w-25 mx-auto" />
       <div className="bg-success p-5">
         <Container>
           <Row className="g-4 py-3 text-white">
-            <Col md={3}>
-              <div className="d-flex justify-content-center align-items-center">
-                <img
-                  className="bg-primary rounded-3 p-3 me-3"
-                  src={img1}
-                  alt=""
-                />
-                <div>
-                  <h2 className="">Over 25</h2>
-                  <h5>Countries</h5>
-                </div>
-              </div>
-            </Col>
-            <Col md={3}>
+        
+            <Col md={4}>
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
@@ -39,7 +27,7 @@ const Attractive = () => {
                 </div>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={4}>
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"
@@ -52,7 +40,7 @@ const Attractive = () => {
                 </div>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={4}>
               <div className="d-flex justify-content-center align-items-center">
                 <img
                   className="bg-primary rounded-3 p-3 me-3"

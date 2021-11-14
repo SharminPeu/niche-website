@@ -9,7 +9,7 @@ const AddProduct = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://powerful-beyond-32668.herokuapp.com/products", data)
+      .post("http://localhost:5000/products", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("New Scooty Added Successfully");

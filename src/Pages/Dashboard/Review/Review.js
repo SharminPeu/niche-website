@@ -11,7 +11,7 @@ const Review = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("https://powerful-beyond-32668.herokuapp.com/review", data)
+      .post("http://localhost:5000/review", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Review Added Successfully");
@@ -21,22 +21,18 @@ const Review = () => {
   };
   return (
     <div className="container p-4">
-      <h2 className="mb-5">Please Review Our Scooty</h2>
+      <h2 className="mb-5">Please Review Our Watch</h2>
       <Row className="justify-content-center">
         <Col lg={8}>
           <form className="book-form" onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name")} defaultValue={user.displayName} />
+            <input {...register("email")} defaultValue={user.email} />
             <input
-              {...register("scootyName")}
-              placeholder="Scooty Name"
+              {...register("productName")}
+              placeholder="Watch Name"
               required
             />
-            <input
-              type="number"
-              {...register("model")}
-              placeholder="Model"
-              required
-            />
+            
             <textarea
               {...register("message")}
               placeholder="Your Message"

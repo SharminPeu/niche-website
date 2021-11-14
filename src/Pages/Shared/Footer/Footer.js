@@ -12,24 +12,24 @@ const Footer = () => {
           <div>
             <img style={{ width: "50px", marginLeft: "5px" }} src="" alt="" />
             <h3>
-              Scooty
-              <span className="text-success">Bazar</span>
+              Watch
+              <span className="text-success">Zone</span>
             </h3>
             <p className="mb-0">
-              "We Provide Comfort, <br /> to make you happy"
+              "We Provide best products <br /> to make you happy"
             </p>
           </div>
           <div className="text-start">
-            <p>About ScootyBazar</p>
+            <p>About Watch Zone</p>
             <p>Read Our Blog</p>
-            <p>Sign up to get Discount</p>
-            <p>Choose Your Scooty</p>
+            <p>Sign up for Discount</p>
+            <p>Choose Your Favourite Watch</p>
           </div>
           <div className="text-start">
             <p>Get Help</p>
             <p>Read FAQs</p>
-            <p>Views All Cities</p>
-            <p>Shop Near Me</p>
+            <p>Views All Collections</p>
+            <p>Stay With Us </p>
           </div>
         </div>
         <p>Follow Us</p>
@@ -41,7 +41,7 @@ const Footer = () => {
         </p>
       </div>
       <p className="mb-0 p-3 text-center text-white bg-primary">
-        Copyright<i className="far fa-copyright"></i> 2022 ScootyBazar All right
+        Copyright<i className="far fa-copyright"></i> 2022 Watch Zone All right
         reserved.
       </p>
     </>

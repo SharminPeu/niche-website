@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Spinner } from "react-bootstrap";
 
 const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("https://powerful-beyond-32668.herokuapp.com/orders")
+    fetch("http://localhost:5000/orders")
       .then((res) => res.json())
-      .then((data) => setOrders(data));
+      .then((data) => {
+        setOrders(data);
+        setIsLoading(false);
+      });
   }, [orders]);
 
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure, want to delete this order?");
     if (proceed) {
-      const url = `https://powerful-beyond-32668.herokuapp.com/orders/${id}`;
+      const url = `http://localhost:5000/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -28,7 +32,7 @@ const ManageOrders = () => {
   const handleUpdate = (id) => {
     const proceed = window.confirm("Confirm This order?");
     if (proceed) {
-      const url = `https://powerful-beyond-32668.herokuapp.com/orders/${id}`;
+      const url = `http://localhost:5000/orders/${id}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -44,6 +48,14 @@ const ManageOrders = () => {
         });
     }
   };
+
+  if (isLoading) {
+    return (
+      <div className="text-center my-5">
+        <Spinner className="text-center" animation="border" variant="primary" />
+      </div>
+    );
+  }
   return (
     <div className="container">
       <h5 className="mb-3 text-color">Admin Panel</h5>

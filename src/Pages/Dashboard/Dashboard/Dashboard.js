@@ -21,13 +21,14 @@ import ManageOrders from "../ManageOrders/ManageOrders";
 import AddProduct from "../AddProduct/AddProduct";
 import AdminRoute from "../../Login/AdminRoute/AdminRoute";
 import ManageProduct from "../ManageProduct/ManageProduct";
+import { Spinner } from "react-bootstrap";
 
 const drawerWidth = 180;
 
 function Dashboard(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const { admin, logOut } = useAuth();
+  const { admin, logOut, isLoading } = useAuth();
 
   let { path, url } = useRouteMatch();
 
@@ -56,11 +57,11 @@ function Dashboard(props) {
             </Button>
           </NavLink>
           <br />
-          <NavLink style={{ textDecoration: "none" }} to={`${url}/makeAdmin`}>
+          {/* <NavLink style={{ textDecoration: "none" }} to={`${url}/makeAdmin`}>
             <Button sx={{ mt: 2 }} color="inherit">
               Make Admin
             </Button>
-          </NavLink>
+          </NavLink> */}
           <NavLink style={{ textDecoration: "none" }} to={`${url}/addProduct`}>
             <Button sx={{ mt: 2 }} color="inherit">
               Add Product
@@ -89,6 +90,12 @@ function Dashboard(props) {
             </Button>
           </NavLink>
           <br />
+          <NavLink style={{ textDecoration: "none" }} to={`${url}/makeAdmin`}>
+            <Button sx={{ mt: 2 }} color="inherit">
+              Make Admin
+            </Button>
+          </NavLink>
+          <br/>
           <NavLink style={{ textDecoration: "none" }} to={`${url}/review`}>
             <Button sx={{ mt: 2 }} color="inherit">
               Review
@@ -106,6 +113,14 @@ function Dashboard(props) {
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
+
+  if (isLoading) {
+    return (
+      <div className="text-center my-5">
+        <Spinner className="text-center" animation="border" variant="primary" />
+      </div>
+    );
+  }
 
   return (
     <Box sx={{ display: "flex" }}>

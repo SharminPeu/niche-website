@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import bg from "../../../images/scooter.png";
+import bg from "../../../images/watch.jpg";
 
 const Navigation = () => {
   const { user, logOut } = useAuth();
@@ -21,7 +21,7 @@ const Navigation = () => {
               <img style={{ width: "40px" }} className="me-2" src={bg} alt="" />
               <div>
                 <p className="mb-0 lh-1">
-                  Scooty<span className="text-success fw-bold mb-0">Bazar</span>
+                  Watch Zone 
                 </p>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Navigation = () => {
             </Nav>
             {user?.displayName && (
               <Navbar.Text>
-                Hi, <span className="text-white me-2">{user?.displayName}</span>
+                 <span className="text-white me-2">{user?.displayName}</span>
               </Navbar.Text>
             )}
             {user?.displayName ? (

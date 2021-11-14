@@ -16,19 +16,19 @@ const Contact = () => {
             <hr className="border-bottom border-4 border-primary w-50" />
             <p className="fw-bold">Information</p>
             <p>
-              <i className="text-color fas fa-phone-alt"></i> (+064)-342-68382
+              <i className="text-color fas fa-phone-alt"></i> (+0099345213)
             </p>
             <p>
-              <i className="text-color fas fa-mobile-alt"></i> (+880)-184-55600
+              <i className="text-color fas fa-mobile-alt"></i> (+8801776546675)
             </p>
             <p>
               <i className="text-color far fa-envelope"></i>{" "}
-              <a href="hasibulhasan294@gmail.com">hasibulhasan@gmail.com</a>
+              <a href="hasibulhasan294@gmail.com">watch_zone@gmail.com</a>
             </p>
           </div>
           <div className="col-md-8">
-            <p className="text-color mb-0">Drop Us A Line</p>
-            <h3>We’d Love To Hear From You</h3>
+            <p className="text-color mb-0">Drop Us Some info</p>
+            <h3>We'll be glad ...</h3>
             <hr className="border-bottom border-4 border-primary w-50 mb-4" />
             <form className="row g-3 bg-secondary bg-opacity-50 rounded pb-3">
               <div className="col-md-6">

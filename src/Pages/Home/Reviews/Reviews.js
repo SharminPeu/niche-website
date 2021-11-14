@@ -5,21 +5,21 @@ import Rating from "@mui/material/Rating";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
-  const [setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://powerful-beyond-32668.herokuapp.com/reviews")
+    fetch("http://localhost:5000/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);
         setIsLoading(false);
       });
-  }, [setIsLoading]);
+  }, [isLoading]);
 
   return (
     <div className="my-5 py-5 bg-light">
       <h5 className="text-dark fw-light">Don’t Hear From Us Only</h5>
-      <h2 className="text-primary">What People Say About Us</h2>
+      <h2 className="text-primary">Customers Reviews About Us</h2>
       <hr className="border-bottom border-4 border-primary w-25 mx-auto" />
       <Container>
         <Row className="g-4 py-3 my-4">
@@ -30,10 +30,12 @@ const Reviews = () => {
                 <div>
                   <h5 className="fw-light text-start">{review.message}</h5>
                   <p className="mb-0 fst-italic text-start">
-                    {review.scootyName}
+                    {review.productName}
                   </p>
-                  <p className="fst-italic text-start">{review.model}</p>
+                  <p className="fst-italic text-start">{review.brand}</p>
                   <h4 className="text-start">{review.name}</h4>
+                  <h4 className="text-start">{review.email}</h4>
+
                   <div className="d-flex justify-content-between  align-items-center">
                     <p className="text-start text-warning">
                       <Rating

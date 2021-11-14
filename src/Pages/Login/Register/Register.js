@@ -74,13 +74,13 @@ const Register = () => {
               placeholder="1234 Main St"
             />
           </div>
-          <div className="col-md-6">
+          {/* <div className="col-md-6">
             <label htmlFor="inputCity" className="form-label">
               City
             </label>
             <input type="text" className="form-control" id="inputCity" />
-          </div>
-          <div className="col-md-4">
+          </div> */}
+          {/* <div className="col-md-4">
             <label htmlFor="inputState" className="form-label">
               State
             </label>
@@ -88,13 +88,13 @@ const Register = () => {
               <option defaultValue="choose">Choose...</option>
               <option>...</option>
             </select>
-          </div>
-          <div className="col-md-2">
+          </div> */}
+          {/* <div className="col-md-2">
             <label htmlFor="inputZip" className="form-label">
               Zip
             </label>
             <input type="text" className="form-control" id="inputZip" />
-          </div>
+          </div> */}
           <div className="col-12">
             <button
               type="submit"
