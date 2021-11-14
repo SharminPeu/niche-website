@@ -36,21 +36,18 @@ const ManageProduct = () => {
       {product?.map((item) => (
         <div key={item._id} className="my-order">
           <Row>
-            <Col lg={3}>
+            <Col lg={4}>
               <p>{item.name}</p>
             </Col>
             <Col lg={3}>
-              <p>{item.model}</p>
+              <p>{item.brand}</p>
             </Col>
             <Col lg={3}>
               <p>{item.price}</p>
             </Col>
             <Col lg={2}>
-              <p>{item.rating}</p>
-            </Col>
-            <Col lg={1}>
               <button
-                className="border-0 rounded"
+                className="border-0 rounded btn btn-info"
                 onClick={() => handleDelete(item._id)}
               >
                 Delete

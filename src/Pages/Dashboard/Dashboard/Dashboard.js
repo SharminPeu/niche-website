@@ -100,7 +100,7 @@ function Dashboard(props) {
       }
       <Divider sx={{ mt: 5 }} />
       <br />
-      <button onClick={logOut} className="btn btn-success text-white py-1">
+      <button onClick={logOut} className="btn btn-info text-white py-1">
         LogOut
       </button>
     </div>

@@ -29,7 +29,7 @@ const Product = ({ product }) => {
           </Card.Text>
           <button
             onClick={() => handleBooking(_id)}
-            className="btn btn-success"
+            className="btn btn-info"
           >
             Buy Now
           </button>

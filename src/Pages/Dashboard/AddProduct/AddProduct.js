@@ -36,10 +36,10 @@ const AddProduct = () => {
               required
             />
             <input {...register("price")} placeholder="price" required />
-          
+
             <input {...register("img")} placeholder="Img Url" required />
             <input
-              className="btn-success border-0 text-white py-2 rounded-pill"
+              className="btn-info border-0 text-white py-2 rounded-pill"
               type="submit"
             />
           </form>

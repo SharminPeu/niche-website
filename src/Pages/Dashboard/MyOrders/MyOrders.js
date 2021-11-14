@@ -33,7 +33,6 @@ const MyOrders = () => {
   return (
     <div className="container">
       <h2 className="mb-2 text-color">Your Order List</h2>
-      <hr className="border-bottom border-4 border-success mx-auto w-25" />
       <h4 className="mb-3">Order item: {orders?.length}</h4>
       {orders?.map((order) => (
         <div key={order._id} className="my-order">
@@ -56,7 +55,7 @@ const MyOrders = () => {
             </Col>
             <Col lg={1}>
               <button
-                className="border-0 rounded"
+                className="border-0 btn btn-info rounded"
                 onClick={() => handleDelete(order._id)}
               >
                 Delete

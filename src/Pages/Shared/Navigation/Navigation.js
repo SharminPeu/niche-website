@@ -11,7 +11,7 @@ const Navigation = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="primary"
+        bg="secondary"
         variant="dark"
         sticky="top"
       >
@@ -21,7 +21,7 @@ const Navigation = () => {
               <img style={{ width: "40px" }} className="me-2" src={bg} alt="" />
               <div>
                 <p className="mb-0 lh-1">
-                  Watch Zone 
+                  Watch Zone
                 </p>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Navigation = () => {
             </Nav>
             {user?.displayName && (
               <Navbar.Text>
-                 <span className="text-white me-2">{user?.displayName}</span>
+                <span className="text-white me-2">{user?.displayName}</span>
               </Navbar.Text>
             )}
             {user?.displayName ? (
@@ -61,10 +61,10 @@ const Navigation = () => {
             ) : (
               <>
                 <Nav.Link as={NavLink} to="/login">
-                  <button className="btn btn-success text-white">LogIn</button>
+                  <button className="btn btn-info text-white">LogIn</button>
                 </Nav.Link>
                 <Nav.Link as={NavLink} to="/register">
-                  <button className="btn btn-success text-white">
+                  <button className="btn btn-info text-white">
                     Register
                   </button>
                 </Nav.Link>

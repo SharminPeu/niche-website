@@ -40,13 +40,13 @@ const BookProduct = () => {
       <Navigation></Navigation>
       <div className="my-5">
         <h2 className="mb-3 text-color">Book Your Order</h2>
-      
+
         <Container>
           <Row className="g-4 my-3">
             <Col md={7} lg={8}>
               <h4>Watch Details</h4>
               <div>
-                <img className="book-image" src={product?.img} alt="" />
+                <img className=" image" src={product?.img} alt="" />
                 <hr className="text-secondary mb-2" />
                 <div className="text-start d-flex justify-content-between align-items-center">
                   <h2>
@@ -67,7 +67,7 @@ const BookProduct = () => {
                   </h3>
                   <hr className="text-secondary mb-2" />
                   {/* <div className="text-start d-flex justify-content-between"> */}
-                    <p>800+ Review</p>
+                  <p>800+ Review</p>
                   {/* </div> */}
                   <hr className="text-secondary mb-2" />
                 </div>
@@ -88,12 +88,12 @@ const BookProduct = () => {
                     placeholder="Your Address"
                     required
                   />
-              
+
                   <textarea {...register("massage")} placeholder="Massage" />
                   <p className="text-start text-white mb-0 mt-1">Your Watch</p>
                   <input defaultValue={product?.name} required />
                   <input
-                    className="bg-success border-0 text-white py-2 rounded-pill"
+                    className="bg-info border-0 text-white py-2 rounded-pill"
                     type="submit"
                     value="Confirm"
                   />

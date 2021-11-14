@@ -82,10 +82,10 @@ const ManageOrders = () => {
                   Pending
                   <span>
                     <button
-                      className="border-0 rounded"
+                      className="border-0 ms-2 rounded btn btn-secondary"
                       onClick={() => handleUpdate(order._id)}
                     >
-                      Up
+                      Update
                     </button>
                   </span>
                 </p>
@@ -93,7 +93,7 @@ const ManageOrders = () => {
             </Col>
             <Col lg={1}>
               <button
-                className="border-0 rounded"
+                className="border-0 btn btn-info rounded mt-1"
                 onClick={() => handleDelete(order._id)}
               >
                 Delete

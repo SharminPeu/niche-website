@@ -32,7 +32,7 @@ const Review = () => {
               placeholder="Watch Name"
               required
             />
-            
+
             <textarea
               {...register("message")}
               placeholder="Your Message"
@@ -44,7 +44,7 @@ const Review = () => {
               required
             />
             <input
-              className="btn-success border-0 text-white py-2 rounded-pill"
+              className="btn-info border-0 text-white py-2 rounded-pill"
               type="submit"
             />
           </form>
