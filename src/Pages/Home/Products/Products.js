@@ -24,11 +24,10 @@ const Products = () => {
   return (
     <div className="my-5 p-4">
       <h2 className="mb-0 text-primary">Our Watch Collections</h2>
-      <hr className="border-bottom border-4 border-success mx-auto w-25" />
       <Container>
         <Row className="g-4 my-3">
           {products.slice(0, 6).map((product) => (
-            <Product key={product.id} product={product}></Product>
+            <Product key={product._id} product={product}></Product>
           ))}
         </Row>
       </Container>

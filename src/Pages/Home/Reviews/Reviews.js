@@ -20,7 +20,7 @@ const Reviews = () => {
     <div className="my-5 py-5 bg-light">
       <h5 className="text-dark fw-light">Don’t Hear From Us Only</h5>
       <h2 className="text-primary">Customers Reviews About Us</h2>
-      <hr className="border-bottom border-4 border-primary w-25 mx-auto" />
+      
       <Container>
         <Row className="g-4 py-3 my-4">
           {reviews.map((review) => (

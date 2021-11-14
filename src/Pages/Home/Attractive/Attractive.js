@@ -8,7 +8,6 @@ const Attractive = () => {
   return (
     <>
       <h2 className="text-primary text-center">You Will Get Here</h2>
-      <hr className="border-bottom border-4 border-primary w-25 mx-auto" />
       <div className="bg-success p-5">
         <Container>
           <Row className="g-4 py-3 text-white">

@@ -3,27 +3,43 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import GoogleIcon from "@mui/icons-material/Google";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+// import bg from "../../../images/watch.jpg"
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-dark p-3 text-white">
+      <div className="bg-secondary p-3 text-white">
         <div className="py-5 d-lg-flex justify-content-around">
-          <div>
+        <div>
             <img style={{ width: "50px", marginLeft: "5px" }} src="" alt="" />
             <h3>
-              Watch
-              <span className="text-success">Zone</span>
-            </h3>
+              Watch Zone </h3>
             <p className="mb-0">
               "We Provide best products <br /> to make you happy"
             </p>
           </div>
+          
+         
+        
+          
           <div className="text-start">
-            <p>About Watch Zone</p>
+            <h4>Connect With Us</h4>
+           
+            <p className="fw-bold">Information</p>
+            <p>
+              <i className="text-color fas fa-phone-alt"></i> (+0099345213)
+            </p>
+            <p>
+              <i className="text-color fas fa-mobile-alt"></i> (+8801776546675)
+            </p>
+            <p>
+              <i className="text-color far fa-envelope"></i>{" "}
+              <a className="text-white" href="hasibulhasan294@gmail.com">watch_zone@gmail.com</a>
+            </p>
+            {/* <p>About Watch Zone</p>
             <p>Read Our Blog</p>
             <p>Sign up for Discount</p>
-            <p>Choose Your Favourite Watch</p>
+            <p>Choose Your Favourite Watch</p> */}
           </div>
           <div className="text-start">
             <p>Get Help</p>

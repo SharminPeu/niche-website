@@ -27,12 +27,11 @@ const AllProducts = () => {
     <div>
       <Navigation></Navigation>
       <div className="my-5 p-4">
-        <h2 className="mb-0">Our Brand New Watch Collections</h2>
-        <hr className="border-bottom border-4 border-success mx-auto w-25" />
+        <h2 className="mb-0">Our Watch Collections</h2>
         <Container>
           <Row className="g-4 my-3">
             {products.map((product) => (
-              <Product key={product.id} product={product}></Product>
+              <Product key={product._id} product={product}></Product>
             ))}
           </Row>
         </Container>

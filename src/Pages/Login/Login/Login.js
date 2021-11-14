@@ -66,9 +66,7 @@ const Login = () => {
                 aria-describedby="emailHelp"
                 required
               />
-              <div id="emailHelp" className="form-text">
-                We'll never share your email with anyone else.
-              </div>
+            
             </div>
             <div className="text-start">
               <label htmlFor="exampleInputPassword1" className="form-label">
@@ -91,7 +89,7 @@ const Login = () => {
             </button>
           </form>
           <p className="fw-bold my-2">
-            New User? <Link to="/register">Create Account</Link>
+            New User? <Link to="/register">Register Here</Link>
           </p>
           <hr />
           <button

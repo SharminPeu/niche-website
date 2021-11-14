@@ -2,14 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-// import BikeScooterIcon from "@mui/icons-material/BikeScooter";
-import DateRangeIcon from "@mui/icons-material/DateRange";
 import { useHistory, useParams } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import Footer from "../Shared/Footer/Footer";
 import Navigation from "../Shared/Navigation/Navigation";
 import "./BookProduct.css";
-import { Rating } from "@mui/material";
 
 const BookProduct = () => {
   const { id } = useParams();
@@ -43,7 +40,7 @@ const BookProduct = () => {
       <Navigation></Navigation>
       <div className="my-5">
         <h2 className="mb-3 text-color">Book Your Order</h2>
-        <hr className="border-bottom border-4 border-success mx-auto w-25" />
+      
         <Container>
           <Row className="g-4 my-3">
             <Col md={7} lg={8}>
@@ -69,24 +66,9 @@ const BookProduct = () => {
                     <span className="text-danger"> {product?.price}</span>{" "}
                   </h3>
                   <hr className="text-secondary mb-2" />
-                  <div className="text-start d-flex justify-content-between">
-                    <div className="d-flex">
-                      <p className="text-start">
-                        <Rating
-                          name="read-only"
-                          value={product?.rating}
-                          precision={0.1}
-                          readOnly
-                        />
-                      </p>
-                      {product?.rating > 4.5 ? (
-                        <span> (Excellent)</span>
-                      ) : (
-                        <span> (Average)</span>
-                      )}
-                    </div>
+                  {/* <div className="text-start d-flex justify-content-between"> */}
                     <p>800+ Review</p>
-                  </div>
+                  {/* </div> */}
                   <hr className="text-secondary mb-2" />
                 </div>
               </div>
@@ -106,12 +88,7 @@ const BookProduct = () => {
                     placeholder="Your Address"
                     required
                   />
-                  {/* <input
-                    type="number"
-                    {...register("age", { min: 20, max: 80 })}
-                    placeholder="Age (18 to 90)"
-                    required
-                  /> */}
+              
                   <textarea {...register("massage")} placeholder="Massage" />
                   <p className="text-start text-white mb-0 mt-1">Your Watch</p>
                   <input defaultValue={product?.name} required />

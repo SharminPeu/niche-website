@@ -13,7 +13,7 @@ const Contact = () => {
             <p className="text-color fw-bold">Information</p>
             <p className=" mb-0">Contact Info.</p>
             <h3>Connect With Us</h3>
-            <hr className="border-bottom border-4 border-primary w-50" />
+           
             <p className="fw-bold">Information</p>
             <p>
               <i className="text-color fas fa-phone-alt"></i> (+0099345213)
