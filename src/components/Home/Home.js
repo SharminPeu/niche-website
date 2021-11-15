@@ -14,7 +14,6 @@ const Home = () => {
         <MenuBar></MenuBar>
       <Header></Header>
       <ProductShow></ProductShow>
-      <Products></Products>
       <Review></Review>
       <ExtraPart></ExtraPart>
       <Footers></Footers>

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../Firebase/hooks/UseAuth";
-import bg from "../../../images/watch.jpg";
+import bg from "../../../components/image/logo/watch.jpg";
 
 const MenuBar = () => {
   const { user, logOut } = useAuth();

@@ -22,15 +22,18 @@ import useAuth from "../../../Firebase/hooks/UseAuth";
 // import AdminRoute from "../../Login/AdminRoute/AdminRoute";
 // import ManageProduct from "../ManageProduct/ManageProduct";
 import { Spinner } from "react-bootstrap";
-import DashBoardHome from "../DashboardHome/DashboardHome";
+// import DashBoardHome from "../DashboardHome/DashboardHome";
 import Pay from "../Pay/Pay";
 import MyOrders from "../MyOrders/MyOrders";
-import Review from "../../Review/Review";
+// import Review from "../../Review/Review";
 import AdminRoute from "../../AdminRoute/AdminRoute";
 import ManageOrders from "../ManageOrders/ManageOrders";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import AddProduct from "../AddProduct/AddProduct";
 import ManageProduct from "../ManageProduct/ManageProduct";
+// import DashBoardHome from "../DashboardHome/DashboardHome";
+import DashBoardHome from "../DashBoardHome/DashBoardHome";
+import Reviews from "../Reviews/Reviews";
 
 const drawerWidth = 180;
 
@@ -208,7 +211,7 @@ function Dashboard(props) {
             <MyOrders></MyOrders>
           </Route>
           <Route exact path={`${path}/review`}>
-            <Review></Review>
+            <Reviews></Reviews>
           </Route>
           <AdminRoute exact path={`${path}/manageOrders`}>
             <ManageOrders></ManageOrders>
