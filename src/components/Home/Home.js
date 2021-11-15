@@ -2,7 +2,6 @@ import React from "react";
 import ExtraPart from "../ExtraPart/ExtraPart";
 import Header from "../Header/Header";
 import ProductShow from "../ProductShow/ProductShow";
-import Products from "../ProductShow/ProductShow";
 import Review from "../Review/Review";
 import Footers from "../Shared/Footers/Footers";
 import MenuBar from "../Shared/MenuBar/MenuBar";

@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
-// import Rating from "react-rating";
-// import Rating from "@mui/material/Rating";
+
 
 import { useHistory } from "react-router-dom";
 import "./ShowProduct.css";

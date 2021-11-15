@@ -10,15 +10,7 @@ import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Register from "./components/Register/Register";
 import NotFounds from "./components/NotFounds/NotFounds";
 import DashBoard from "./components/DashBoard/DashBoard/DashBoard"
-// import Home from "./Pages/Home/Home/Home";
-// import Contact from "./Pages/Contact/Contact";
-// import Login from "./Pages/Login/Login/Login";
-// import Register from "./Pages/Login/Register/Register";
-// import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
-// import BookProduct from "./Pages/BookProduct/BookProduct";
-// import AllProducts from "./Pages/AllProducts/AllProducts";
-// import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
-// import NotFound from "./Pages/NotFound/NotFound";
+
 
 function APP() {
   return (
