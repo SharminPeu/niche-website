@@ -9,7 +9,7 @@ const AddProduct = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("http://localhost:5000/products", data)
+      .post("https://shrouded-headland-01682.herokuapp.com/products", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("New Scooty Added Successfully");

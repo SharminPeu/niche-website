@@ -5,7 +5,7 @@ const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://shrouded-headland-01682.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);
@@ -16,7 +16,7 @@ const ManageOrders = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure, want to delete this order?");
     if (proceed) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://shrouded-headland-01682.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -32,7 +32,7 @@ const ManageOrders = () => {
   const handleUpdate = (id) => {
     const proceed = window.confirm("Confirm This order?");
     if (proceed) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://shrouded-headland-01682.herokuapp.com/orders/${id}`;
       fetch(url, {
         method: "PUT",
         headers: {
