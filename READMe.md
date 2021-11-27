@@ -6,10 +6,9 @@ for your watch. We have so many watch collection. All world famous watch brand w
 
 ## Project Description
 * In Watch Zone you will get different types of watch collection
-* Here we have different section in our page,People can visit our home page and for booking the package detail they have to be must login from this website.
-* After successful login normal user can  order Products , Check their Order,Can give reviews,our payments system is under process
-* They can make order as their choise ,also delete the order.
-* In Admin dashboard admin can make a admin ,manage all orders ,manage all products.
+*	A responsive full stack website. Users can create an account or Login with their valid email and password. Without login user will only see the homepage.
+* After successful login normal user can order Products,can check their orders,can also delete the orders, can give reviews, here payments system is under process.
+*	In Admin dashboard admin can make any user as an admin, can manage all orders and manage all products.
 
 
 
@@ -20,9 +19,9 @@ for your watch. We have so many watch collection. All world famous watch brand w
 - Best Discount.
 - User Frienly.
 
-## We Use 
+## Technology Used 
 
-* In this project we use react bootstrap framework, react hook form,mui, and customised Css and for icon we use fontawesome
+* HTML,CSS, React.Js, Express.js, Bootstrap, React Bootstrap ,React Router, React Hook, Rest Api, FontAwesome, MongoDB, Firebase, Heroku.
 * For database part we use mongodb atlas
 
 # Client site Github Repo Link [https://github.com/programming-hero-web-course-4/niche-website-client-side-SharminPeu]
