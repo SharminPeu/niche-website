@@ -21,7 +21,7 @@ for your watch. We have so many watch collection. All world famous watch brand w
 
 ## Technology Used 
 
-* HTML,CSS, React.Js, Express.js, Bootstrap, React Bootstrap ,React Router, React Hook, Rest Api, FontAwesome, MongoDB, Firebase, Heroku.
+* HTML,CSS, React.Js, Express.js, Bootstrap, React Bootstrap ,React Router, React Hook, Rest Api, FontAwesome,Firebase, Heroku.
 * For database part we use mongodb atlas
 
 # Client site Github Repo Link [https://github.com/programming-hero-web-course-4/niche-website-client-side-SharminPeu]
